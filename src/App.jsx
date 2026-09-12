@@ -5,6 +5,7 @@ import About from './components/About.jsx'
 import Reviews from './components/Reviews.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App() {
   return (
