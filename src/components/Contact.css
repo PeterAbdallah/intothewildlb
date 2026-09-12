@@ -1,0 +1,43 @@
+.contact {
+  background: var(--color-forest);
+  color: var(--color-paper);
+}
+
+.contact .section-header h2 {
+  color: var(--color-paper);
+}
+
+.contact .section-lead {
+  color: rgba(251, 248, 242, 0.78);
+}
+
+.contact-buttons {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 2rem;
+  max-width: 420px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  border: 1.5px solid rgba(251, 248, 242, 0.25);
+  color: var(--color-paper);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.contact-btn:hover {
+  background: rgba(251, 248, 242, 0.08);
+  border-color: rgba(251, 248, 242, 0.45);
+}
+
+.contact-btn__icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}

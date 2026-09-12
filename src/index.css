@@ -1,0 +1,183 @@
+/* ---------------------------------------------------------------------
+   DESIGN TOKENS
+   Change colors, fonts and spacing here to re-theme the whole site.
+--------------------------------------------------------------------- */
+:root {
+  /* Color */
+  --color-bg: #f1ede3;
+  --color-bg-alt: #e4dcc8;
+  --color-forest: #1e3b2f;
+  --color-forest-light: #2f5943;
+  --color-clay: #bb5b3c;
+  --color-clay-dark: #9a4830;
+  --color-gold: #c9932e;
+  --color-gold-dark: #a3751f;
+  --color-sky: #3e6e7a;
+  --color-sky-dark: #2f5761;
+  --color-ink: #26261f;
+  --color-ink-soft: #55554a;
+  --color-paper: #fbf8f2;
+  --color-line: rgba(38, 38, 31, 0.14);
+
+  /* Type */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Layout */
+  --max-width: 1180px;
+  --space-section: clamp(3.5rem, 6vw, 6.5rem);
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.12;
+  margin: 0;
+  color: var(--color-forest);
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: var(--space-section) 0;
+  scroll-margin-top: 4.5rem;
+}
+
+.section--alt {
+  background: var(--color-bg-alt);
+}
+
+.section-header {
+  max-width: 640px;
+  margin-bottom: 2.75rem;
+}
+
+.section-header h2 {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  letter-spacing: -0.01em;
+}
+
+.section-lead {
+  margin-top: 0.85rem;
+  color: var(--color-ink-soft);
+  font-size: 1.05rem;
+  max-width: 60ch;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.98rem;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+  min-height: 48px;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--primary {
+  background: var(--color-clay);
+  color: var(--color-paper);
+}
+
+.btn--primary:hover {
+  background: var(--color-clay-dark);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: currentColor;
+  color: var(--color-forest);
+}
+
+.btn--outline:hover {
+  background: rgba(30, 59, 47, 0.06);
+}
+
+.btn--on-dark {
+  border-color: rgba(251, 248, 242, 0.5);
+  color: var(--color-paper);
+}
+
+.btn--on-dark:hover {
+  background: rgba(251, 248, 242, 0.12);
+}
+
+.btn--block {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .btn--block {
+    width: auto;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
