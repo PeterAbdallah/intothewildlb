@@ -28,7 +28,7 @@ const packages = [
       'A full day on Lebanon\'s high trails, through pine forest and open ridgeline with sweeping valley views.',
     duration: '5 hours',
     difficulty: 'Moderate',
-    price: '$45',
+    price: '$100',
     image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=1200&auto=format&fit=crop',
     included: ['Certified guide', 'Water & trail snacks', 'First-aid kit', 'Transport from meeting point'],
   },
