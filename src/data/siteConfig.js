@@ -23,7 +23,7 @@ const siteConfig = {
   ],
 
   // Contact details — update these to the guide's real information.
-  whatsappNumber: '96171025299', // digits only, country code, no + or spaces
+  whatsappNumber: '96171100721', // digits only, country code, no + or spaces
   instagramHandle: 'intothewild.lb',
   instagramUrl: 'https://www.instagram.com/intothewild.lb?stkn=ZDNlZDc0MzIxNw==',
   phoneDisplay: '+961 71 100 721',
@@ -33,8 +33,8 @@ const siteConfig = {
   // Placeholder images — replace files in public/images with real photos
   // using these exact filenames, or edit the paths below.
   images: {
-    heroBackground: '/images/hero.jpg',
-    guidePortrait: '/images/guide.jpg',
+    heroBackground: '/images/funny.jpg',
+    guidePortrait: '/images/iris-pic.png',
     hikingCategory: '/images/hiking.jpg',
     familyCategory: '/images/family.jpg',
     kidsCategory: '/images/birthday.jpg',
